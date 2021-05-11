@@ -1,7 +1,13 @@
-import '../styles/globals.css'
+import { Reset } from "styled-reset";
+import { GlobalStyle, lightTheme, darkTheme } from "@/utils/theme";
+import { ThemeProvider } from "styled-components";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const App = ({ Component, pageProps }) => (
+  <ThemeProvider theme={lightTheme}>
+    <Reset />
+    <GlobalStyle />
+    <Component {...pageProps} />
+  </ThemeProvider>
+);
 
-export default MyApp
+export default App;
