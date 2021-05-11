@@ -1,0 +1,13 @@
+{
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.configPath": ".prettierrc",
+  // Default (format when you paste)
+  "editor.formatOnPaste": true,
+  // Default (format when you save)
+  "editor.formatOnSave": true
+}
