@@ -1,9 +1,9 @@
 import { Reset } from 'styled-reset';
-import theme, { GlobalStyle } from '@/utils/theme';
+import { GlobalStyle, lightTheme, darkTheme } from '@/utils/theme';
 import { ThemeProvider } from 'styled-components';
 
 const App = ({ Component, pageProps }) => (
-  <ThemeProvider theme={theme}>
+  <ThemeProvider theme={lightTheme}>
     <Reset />
     <GlobalStyle />
     <Component {...pageProps} />
