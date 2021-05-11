@@ -1,3 +1,2 @@
-export default function Home() {
-  return <div></div>;
-}
+import Page from "@/pages/home";
+export default Page;
