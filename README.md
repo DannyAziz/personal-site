@@ -2,7 +2,7 @@
 
 ## TODO
 
-- [] Styled-Components Theme
+- [x] Styled-Components Theme
 - [] Markdown for Posts
 - [] Header Component
 - [] Side Menu
