@@ -11,4 +11,4 @@
 
 ## Markdown
 
-Posts on this site are markdown files, using `foo` and `bar` to parse them into html.
+Posts on this site are markdown files, using `react-markdown` and `gray-matter` to parse them into html.
