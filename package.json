@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@notionhq/client": "^0.1.7",
     "framer-motion": "^4.1.16",
     "gray-matter": "^4.0.3",
     "next": "10.2.0",
