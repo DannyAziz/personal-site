@@ -1,15 +1,17 @@
 import Page from "@/pages/post";
-import matter from "gray-matter";
 export default Page;
 
 export async function getServerSideProps(context) {
   const { slug } = context.query;
+  const { getPage, getBlocks } = require("@/utils/notion");
 
-  let content = await import(`../../../lib/posts/${slug}.md`);
-  let data = matter(content.default);
-  delete data.orig;
+  let page = await getPage(slug);
+  let blocks = await getBlocks(slug);
 
   return {
-    props: { ...data }
+    props: {
+      page,
+      blocks
+    }
   };
 }
