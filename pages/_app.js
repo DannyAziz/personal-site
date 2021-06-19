@@ -14,7 +14,7 @@ const App = ({ Component, pageProps }) => {
       <Reset />
       <GlobalStyle />
       <Header theme={theme} setTheme={setTheme} />
-      <Component {...pageProps} />
+      <Component {...pageProps} theme={theme} />
     </ThemeProvider>
   );
 };
