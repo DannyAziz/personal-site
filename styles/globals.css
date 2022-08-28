@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #__next {
+    @apply px-8 sm:px-16 pb-16;
+  }
+}

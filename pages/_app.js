@@ -6,6 +6,8 @@ import { ThemeProvider } from "styled-components";
 
 import Header from "@/components/header/index.js";
 
+import "../styles/globals.css";
+
 const App = ({ Component, pageProps }) => {
   let deviceDarkMode;
 
